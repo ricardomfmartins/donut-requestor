@@ -1,0 +1,16 @@
+[project]
+name = "donut-requestor"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "coverage>=7.6.12",
+    "fastapi>=0.115.11",
+    "pre-commit>=4.1.0",
+    "pytest>=8.3.5",
+    "pytest-cov>=6.0.0",
+    "routers>=0.10.1",
+    "ruff>=0.9.10",
+    "uvicorn>=0.34.0",
+]
