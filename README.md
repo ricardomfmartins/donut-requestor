@@ -24,3 +24,19 @@ Run the command line
 ```bash
 uv run pytest tests/unit
 ```
+
+
+## Run API
+
+```bash
+uvicorn donut_requestor.main:app --reload
+```
+
+Test the API
+
+```bash
+curl --request POST --url http://127.0.0.1:8000/donuts \
+  --header 'Content-Type: application/json' \
+  --header 'User-Agent: insomnia/10.3.1' \
+  --data '{"boxSize": 2,"donuts": [{"flavour": "choco"},{"flavour": "vanilla"}]}'
+```
