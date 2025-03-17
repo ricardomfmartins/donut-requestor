@@ -9,14 +9,11 @@ Install uv (Python package manager)
 [uv installation docs](https://docs.astral.sh/uv/getting-started/installation/)
 
 ```bash
-uv venv .venv
+uv sync
 ````
 
 Activate venv with the command line given by uv
 
-```bash
-uv sync
-```
 
 ## Tests
 
