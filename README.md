@@ -18,10 +18,10 @@ Activate venv with the command line given by uv
 ## Tests
 
 Run the command line
+
 ```bash
 uv run pytest tests/unit
 ```
-
 
 ## Run API
 
