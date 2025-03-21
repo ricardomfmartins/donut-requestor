@@ -40,9 +40,11 @@ class DonutBox:
 
     def any_donut_of_flavour(self, flavour: Flavour) -> bool:
         result = False
-        for donut in self._donuts:
-            if donut.flavour == flavour:
-                return True
+        index = 0
+        while index < len(self._donuts):
+            if self._donuts[index].flavour == flavour:
+                result = True
+                index += 1
         return result
 
     def box_price(self) -> float:
